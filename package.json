@@ -1,0 +1,14 @@
+{
+  "name": "@monorepo/root",
+  "private": true,
+  "workspaces": {
+    "packages": [
+      "workspaces/*"
+    ],
+    "nohoist": [
+      "workspaces/**/webpack-dev-server",
+      "**/babel-loader",
+      "**/babel-jest"
+    ]
+  }
+}
